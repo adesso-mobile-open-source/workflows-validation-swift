@@ -1,0 +1,8 @@
+name: PR Checks
+on:
+  push: { branches: [main] }
+  pull_request: {}
+jobs:
+  checks:
+    uses: adesso-mobile-open-source/workflows-swift/.github/workflows/pr-checks.yml@v0.1.0
+    secrets: inherit
