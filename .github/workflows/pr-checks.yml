@@ -4,5 +4,5 @@ on:
   pull_request: {}
 jobs:
   checks:
-    uses: adesso-mobile-open-source/workflows-swift/.github/workflows/pr-checks.yml@v0.1.0
+    uses: adesso-mobile-open-source/workflows-swift/.github/workflows/pr-checks.yml@feature/versioning
     secrets: inherit
