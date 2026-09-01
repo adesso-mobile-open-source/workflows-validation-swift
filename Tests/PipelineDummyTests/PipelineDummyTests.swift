@@ -1,3 +1,11 @@
+//===----------------------------------------------------------------===//
+//
+// Copyright (c) 2026 adesso SE
+// Licensed under Apache License v2.0
+//
+// See LICENSE for license information.
+//===----------------------------------------------------------------===//
+
 import Testing
 @testable import PipelineDummy
 
