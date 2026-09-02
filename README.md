@@ -3,7 +3,7 @@ Dummy Repository for iOS Pipeline Evaluation
 
 A minimal Swift package used to exercise GitHub Actions CI/CD pipelines. It
 contains a tiny library with platform-conditional code and a small Swift
-Testing suite — no real functionality.
+Testing suite — no real functionality, just pipeline integration.
 
 ## Requirements
 
