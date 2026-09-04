@@ -6,7 +6,6 @@
 
 /// A minimal, cross-platform Swift package used to exercise CI/CD pipelines.
 public enum PipelineDummy {
-
     /// A human-readable name of the platform this code was compiled for.
     ///
     /// Implemented with `#if os(...)` branches so that each supported
@@ -14,21 +13,21 @@ public enum PipelineDummy {
     /// slightly different code path, which is useful for validating
     /// cross-platform build pipelines.
     public static var platformName: String {
-        #if os(macOS)
+#if os(macOS)
         return "macOS"
-        #elseif os(iOS)
+#elseif os(iOS)
         return "iOS"
-        #elseif os(watchOS)
+#elseif os(watchOS)
         return "watchOS"
-        #elseif os(tvOS)
+#elseif os(tvOS)
         return "tvOS"
-        #elseif os(visionOS)
+#elseif os(visionOS)
         return "visionOS"
-        #elseif os(Linux)
+#elseif os(Linux)
         return "Linux"
-        #else
+#else
         return "Unknown"
-        #endif
+#endif
     }
 
     /// A trivial, platform-independent pure function used as a stable
