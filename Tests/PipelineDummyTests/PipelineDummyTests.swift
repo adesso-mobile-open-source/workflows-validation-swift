@@ -4,21 +4,20 @@
 // You may obtain a copy of the License at
 // http://www.apache.org/licenses/LICENSE-2.0
 
-import Testing
 @testable import PipelineDummy
+import Testing
 
 @Suite("PipelineDummy")
 struct PipelineDummyTests {
-
-    @Test("add sums two integers")
-    func addSumsTwoIntegers() {
+    @Test
+    func `add sums two integers`() {
         #expect(PipelineDummy.add(2, 3) == 5)
         #expect(PipelineDummy.add(-1, 1) == 0)
     }
 
-    @Test("platformName is a known, non-empty value")
-    func platformNameIsKnown() {
-        let knownPlatforms: Set<String> = [
+    @Test
+    func `platformName is a known, non-empty value`() {
+        let knownPlatforms: Set = [
             "macOS", "iOS", "watchOS", "tvOS", "visionOS", "Linux"
         ]
         #expect(knownPlatforms.contains(PipelineDummy.platformName))
