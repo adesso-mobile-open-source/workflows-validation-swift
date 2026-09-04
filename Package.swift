@@ -15,13 +15,13 @@ let package = Package(
         .iOS(.v16),
         .watchOS(.v9),
         .tvOS(.v16),
-        .visionOS(.v1)
+        .visionOS(.v1),
     ],
     products: [
         .library(
             name: "PipelineDummy",
             targets: ["PipelineDummy"]
-        )
+        ),
     ],
     targets: [
         .target(
@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "PipelineDummyTests",
             dependencies: ["PipelineDummy"]
-        )
+        ),
     ]
 )
