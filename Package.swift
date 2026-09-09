@@ -16,7 +16,7 @@ let package = Package(
         .watchOS(.v9),
         .tvOS(.v16),
         .visionOS(.v1),
-        .custom("Linux", versionString: "0")
+        .custom("linux", versionString: "0")
     ],
     products: [
         .library(
