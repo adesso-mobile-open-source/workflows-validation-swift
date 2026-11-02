@@ -14,19 +14,19 @@ public enum PipelineDummy {
     /// cross-platform build pipelines.
     public static var platformName: String {
 #if os(macOS)
-        return "macOS"
+        "macOS"
 #elseif os(iOS)
-        return "iOS"
+        "iOS"
 #elseif os(watchOS)
-        return "watchOS"
+        "watchOS"
 #elseif os(tvOS)
-        return "tvOS"
+        "tvOS"
 #elseif os(visionOS)
-        return "visionOS"
+        "visionOS"
 #elseif os(Linux)
-        return "Linux"
+        "Linux"
 #else
-        return "Unknown"
+        "Unknown"
 #endif
     }
 
